@@ -3,7 +3,7 @@
 This repository implements multiple algorithms for RNA secondary structure prediction, focusing on dynamic programming approaches.
 
 - Nussinov Algorithm: Predicts the optimal secondary structure by maximizing the number of base pairs.
-- Zuker Algorithm (upcoming): Finds a thermodynamically stable structure by minimizing free energy.
+- Zuker Algorithm: Finds a thermodynamically stable structure by minimizing free energy.
 
 ---
 
