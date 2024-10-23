@@ -1,9 +1,5 @@
 #include "zuker.hpp"
 
-// debug usage
-#include <iomanip>
-#include <iostream>
-
 /*
  * Constructor
  * @param seq: RNA sequence
@@ -300,9 +296,6 @@ void Zuker::dp() {
       updateM(idx, j);
     }
   }
-
-  std::cout << "W[ " << 0 << " ][ seqLen - 1 ] = " << W_.at(0).at(seqLen - 1)
-            << std::endl;
 }
 
 std::string Zuker::traceback() const {
