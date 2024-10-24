@@ -359,8 +359,8 @@ std::string Zuker::traceback() const {
 
       if (!found) {
         for (int k = i + 1; k < j - 1; ++k) {
-          if (std::abs(V_.at(i).at(j) -
-                       (M_.at(i + 1).at(k) + M_.at(k + 1).at(j) + a))) {
+          if (std::abs(V_.at(i).at(j) - (M_.at(i + 1).at(k) +
+                                         M_.at(k + 1).at(j - 1) + a)) < kEps) {
             stack.push({i + 1, k, 'M'});
             stack.push({k + 1, j - 1, 'M'});
             found = true;
